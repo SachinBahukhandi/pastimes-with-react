@@ -6,9 +6,7 @@ import Home from './Home';
 
 function App() {
   return (
-    <div className="container">
       <Home />
-    </div>
   );
 }
 
