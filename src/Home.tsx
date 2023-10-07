@@ -1,8 +1,10 @@
 import React from 'react';
+import Todo from './Todo';
+import TodoHeader from './components/todo/TodoHeader';
 
 export default function Home() {
 
-    return <div className='container w-screen bg-indigo-500 max-w-full max-h-full'>
+    return <div className='container w-screen max-w-full max-h-full'>
 
         <nav className="bg-white border-gray-200 dark:bg-gray-900">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
@@ -37,11 +39,13 @@ export default function Home() {
                 </div>
             </div>
         </nav>
+        <div className="min-h-screen grid grid-cols-3 divide-x-4">
+            <TodoHeader title="Todo" color='red' />
+            <TodoHeader title="In Progress" color='yellow' />
+            <TodoHeader title="Done" color='green' />
+            <div className='body'>
 
-        <div className="flex flex-row max-h-full min-h-screen">
-            <div className="basis-1/2 bg-red-200"></div>
-            <div className="basis-1/2 bg-orange-200"></div>
-            <div className="basis-1/2 bg-gray-200"></div>
+            </div>
         </div>
     </div>;
 }
