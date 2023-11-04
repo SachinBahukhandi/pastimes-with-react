@@ -1,6 +1,7 @@
 import React from 'react';
 import Todo from './Todo';
-import TodoHeader from './components/todo/TodoHeader';
+import TodoHeader from './components/todo/TodoSection';
+import TodoComponent from './components/todo/TodoComponent';
 
 export default function Home() {
 
@@ -39,13 +40,7 @@ export default function Home() {
                 </div>
             </div>
         </nav>
-        <div className="min-h-screen grid grid-cols-3 divide-x-4">
-            <TodoHeader title="Todo" color='red' />
-            <TodoHeader title="In Progress" color='yellow' />
-            <TodoHeader title="Done" color='green' />
-            <div className='body'>
 
-            </div>
-        </div>
+        <TodoComponent />
     </div>;
 }
